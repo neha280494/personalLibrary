@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="./myscript.js"></script>
+   <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>My Book List</h2>
+    <div id="tableContainer">
+        <!-- The table will be inserted here by JavaScript -->
+         <table id="bookTable">
+
+         </table>
+    </div>
+    <!-- A modal dialog containing a form -->
+<dialog id="formDialog">
+  <form>
+    <p>
+      <label>
+        *Book Name:
+        <input type="text" id="bookName"/>
+      </label>
+      <br>
+      <label>
+        *Author:
+        <input type="text" id="authorName"/>
+      </label>
+      <br>
+      <label>
+        *Number of Pages:
+        <input type="number" id="pages"/>
+      </label>
+      <br>
+      <label class="check-wrap">
+         <span class="check-text">Read Status</span>
+  <input type="checkbox" id="readStatus">
+</label>
+    </p>
+    <div>
+      <button value="cancel" formmethod="dialog">Cancel</button>
+      <button id="confirmBtn" value="default">Confirm</button>
+    </div>
+  </form>
+</dialog>
+<p>
+  <button id="showDialog">Add a new Book</button>
+</p>
+<output></output>
+    
+</body>
+</html>
