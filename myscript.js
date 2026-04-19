@@ -48,7 +48,7 @@ renderTable(books);
 
     });
 
-    confirmBtn.addEventListener("click",(e) => {
+    confirmBtnl.addEventListener("click",(e) => {
         e.preventDefault();
         const bookId = generateRandomId();
          const bookName = document.getElementById("bookName").value;
@@ -174,6 +174,8 @@ function removeBook(id){
     
     books = books.filter(book=> book.bookId !== id);
 }
+
+
 
 
 

@@ -10,7 +10,7 @@
 </head>
 <body>
 
-    <h2>My Book List</h2>
+    <h2>MY LIBRARY</h2>
     <div id="tableContainer">
         <!-- The table will be inserted here by JavaScript -->
          <table id="bookTable">
@@ -23,17 +23,17 @@
     <p>
       <label>
         *Book Name:
-        <input type="text" id="bookName"/>
+        <input type="text" id="bookName" required/>
       </label>
       <br>
       <label>
         *Author:
-        <input type="text" id="authorName"/>
+        <input type="text" id="authorName" required/>
       </label>
       <br>
       <label>
         *Number of Pages:
-        <input type="number" id="pages"/>
+        <input type="number" id="pages" min="5" required/>
       </label>
       <br>
       <label class="check-wrap">

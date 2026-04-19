@@ -82,7 +82,7 @@ renderTable(books); // populating the table with pre-existing values
         const pages = document.getElementById("pages").value;
         const read_status_check = document.getElementById("readStatus").checked;
         const status = read_status_check === true ? true : false ;
-        if(bookName!==null && authorName!==null && pages!==null)
+        if(bookName!=="" && authorName!=="" && pages!=="")
     {
         
         addBook(bookName, authorName, pages, status)
@@ -201,7 +201,6 @@ function removeBook(id){
     
     books = books.filter(book=> book.bookId !== id);
 }
-
 
 
 

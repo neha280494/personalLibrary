@@ -5,6 +5,13 @@ table {
   overflow: hidden;
 }
 
+h2{
+
+  color:brown;
+  text-align: center;
+
+}
+
 th {
   background: brown;
   color: #fff;
@@ -17,6 +24,7 @@ td {
   padding: 14px;
   background: #fff;
 }
+
 
 tr:nth-child(even) td {
   background: #f3f6fb;
@@ -31,4 +39,21 @@ body {
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+fieldset {
+  width: 100%;
+  border: 1px solid #333333;
+  box-sizing: border-box;
+}
+
+input:invalid {
+  box-shadow: 0 0 5px 1px red;
+}
+
+input:focus:invalid {
+  box-shadow: none;
 }
